@@ -133,7 +133,8 @@ def _text(results, passed, checks, gaps) -> str:
              "=" * 92, ""]
     for r in results:
         mark = "PASS" if r.passed else "FAIL"
-        lines.append(f"  [{mark}]  {r.case_id}  ({r.checks} assertions)")
+        noun = "assertion" if r.checks == 1 else "assertions"
+        lines.append(f"  [{mark}]  {r.case_id}  ({r.checks} {noun})")
         for f in r.failures:
             lines.append(f"           -> {f}")
     lines += ["", "-" * 92,
