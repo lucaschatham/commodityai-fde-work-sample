@@ -20,6 +20,57 @@ Python 3.10+. No dependencies, no credentials, no network.
 
 ---
 
+## The method this is a worked example of
+
+Seven phases, four gates, one return arc.
+
+Two things make it a method rather than a checklist. **It stops** — four gates can send a
+deployment backwards, and one is a hard stop no schedule pressure overrides. And **it compounds** —
+the output isn't just a live workflow, it's rules, golden cases and product feedback that make the
+next deployment start further along. An implementation consultant finishes a project; a deployment
+engineer leaves the next deployment shorter.
+
+```mermaid
+flowchart TB
+    D["<b>1 · DISCOVER</b><br/>map the as-is workflow<br/>find where the money leaks"]
+    M["<b>2 · MODEL</b> — needs engineering<br/>canonical fields, provenance<br/>target system mappings"]
+    C["<b>3 · CONFIGURE</b><br/>rules, layer assignment<br/>confidence thresholds"]
+    P["<b>4 · PROVE</b><br/>golden set, eval green<br/>thresholds calibrated with ops"]
+    A["<b>5 · ACCEPT</b><br/>UAT scripts, acceptance criteria<br/>three sign-offs"]
+    X["<b>6 · CUT OVER</b> — needs engineering<br/>shadow run<br/>ops reviews every case"]
+    O["<b>7 · OPERATE</b><br/>parallel run<br/>then steady state"]
+    F["<b>FEED BACK</b><br/>prioritised product memo"]
+    PL(["platform absorbs it"])
+
+    D --> M --> C --> P
+    P --> G1{"eval green?<br/>thresholds signed?"}
+    G1 -->|no| C
+    G1 -->|yes| A
+    A --> G2{"three sign-offs?<br/>known gaps accepted?"}
+    G2 -->|no| C
+    G2 -->|yes| X
+    X --> G3{"ops lead agrees on<br/>every shadow case?"}
+    G3 -->|"no — HARD STOP<br/>resolve as configuration"| C
+    G3 -->|yes| O
+    O --> G4{"two consecutive<br/>clean days?"}
+    G4 -->|"no — extend the run"| O
+    G4 -->|yes| F
+    F --> PL
+    PL -.->|"next deployment starts further along"| C
+```
+
+**Six of eight phases need no engineering time.** That's the design goal, not an accident of this
+customer. The two that do are bounded and scheduled: integration credentials at Model, the
+write-back flag at Cut over. If a deployment pulls engineers in anywhere else, the method has
+failed, and that's worth saying out loud rather than absorbing quietly.
+
+**G3 and G4 are the two people try to negotiate away** under schedule pressure, which is why
+they're written down in advance. A cutover completed over an unresolved objection produces a system
+nobody uses — the ops lead's disagreement is data about the configuration, not resistance to be
+managed. And the parallel run exits on a *signal*, not a *date*.
+
+Phase detail, artifacts and gate conditions: [00 — Deployment method](docs/00-deployment-method.md).
+
 ## The trade
 
 60,000 MT Brazilian soyabeans in bulk, Paranaguá → Rotterdam, CIF, GAFTA 100, priced off CBOT
@@ -91,6 +142,7 @@ That is the deployment finding, and it is [item 2 in the feedback memo](docs/06-
 
 | | |
 |---|---|
+| [00 — Deployment method](docs/00-deployment-method.md) | The seven phases, four gates, and the return arc. What each phase leaves behind and which need an engineer |
 | [01 — Discovery & workflow map](docs/01-discovery-workflow-map.md) | As-is process, where the money leaks, and a reusable 22-question discovery bank |
 | [02 — Data model & field mappings](docs/02-field-mappings.md) | Source doc → canonical field → NetSuite, with confidence and provenance |
 | [03 — Rules & review policy](docs/03-rules-and-review-policy.md) | The deterministic / model-assisted / human-authority split, and confidence gating |
