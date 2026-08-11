@@ -32,14 +32,14 @@ engineer leaves the next deployment shorter.
 
 ```mermaid
 flowchart TB
-    D["<b>1 · DISCOVER</b><br/>map the as-is workflow<br/>find where the money leaks"]
-    M["<b>2 · MODEL</b> — needs engineering<br/>canonical fields, provenance<br/>target system mappings"]
-    C["<b>3 · CONFIGURE</b><br/>rules, layer assignment<br/>confidence thresholds"]
-    P["<b>4 · PROVE</b><br/>golden set, eval green<br/>thresholds calibrated with ops"]
-    A["<b>5 · ACCEPT</b><br/>UAT scripts, acceptance criteria<br/>three sign-offs"]
-    X["<b>6 · CUT OVER</b> — needs engineering<br/>shadow run<br/>ops reviews every case"]
-    O["<b>7 · OPERATE</b><br/>parallel run<br/>then steady state"]
-    F["<b>FEED BACK</b><br/>prioritised product memo"]
+    D["1 · DISCOVER<br/>map the as-is workflow<br/>find where the money leaks"]
+    M["2 · MODEL — needs engineering<br/>canonical fields, provenance<br/>target system mappings"]
+    C["3 · CONFIGURE<br/>rules, layer assignment<br/>confidence thresholds"]
+    P["4 · PROVE<br/>golden set, eval green<br/>thresholds calibrated with ops"]
+    A["5 · ACCEPT<br/>UAT scripts, acceptance criteria<br/>three sign-offs"]
+    X["6 · CUT OVER — needs engineering<br/>shadow run<br/>ops reviews every case"]
+    O["7 · OPERATE<br/>parallel run<br/>then steady state"]
+    F["FEED BACK<br/>prioritised product memo"]
     PL(["platform absorbs it"])
 
     D --> M --> C --> P
