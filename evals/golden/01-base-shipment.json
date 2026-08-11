@@ -1,0 +1,15 @@
+{
+  "case_id": "base_shipment",
+  "description": "The as-received SHP-4471 document set. Regression baseline for the whole catalogue.",
+  "overlay": {},
+  "expect": {
+    "DOC-01": "fail", "QTY-01": "pass", "QTY-02": "pass",
+    "PRC-01": "pass", "PRC-02": "pass", "PRC-03": "pass",
+    "QUA-01": "allowance", "QUA-02": "needs_review", "QUA-03": "pass", "QUA-04": "pass",
+    "FIN-01": "fail", "FIN-02": "needs_review", "FIN-03": "fail",
+    "SHP-01": "fail", "SHP-02": "needs_review", "CPT-01": "needs_review"
+  },
+  "expect_clear_to_pay": false,
+  "expect_confirmed_recoverable_usd": 95175.85,
+  "expect_pending_review_usd": 89118.75
+}

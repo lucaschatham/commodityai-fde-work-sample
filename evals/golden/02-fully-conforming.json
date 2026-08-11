@@ -1,0 +1,36 @@
+{
+  "case_id": "fully_conforming",
+  "description": "Every term met. Guards against a catalogue that only knows how to say no. If this case ever goes red, the rules have become over-tight and ops will stop trusting the queue.",
+  "overlay": {
+    "add_documents": {
+      "outturn_weight_certificate": {
+        "doc_id": "VMK-26-03319",
+        "fields": {
+          "net_outturn_weight_mt": {"value": 59380.100, "confidence": 0.98},
+          "survey_date": {"value": "2026-03-19", "confidence": 0.98}
+        }
+      }
+    },
+    "set_fields": {
+      "certificate_of_quality": {
+        "moisture_pct": {"value": 13.80},
+        "oil_content_determinations": {"value": [19.20, 19.10, 19.30], "confidence": 0.96}
+      },
+      "bill_of_lading": {
+        "bl_date": {"value": "2026-02-20"},
+        "consignee": {"value": "Harbourline Commodities B.V.", "confidence": 0.98}
+      },
+      "commercial_invoice": {
+        "weight_basis_stated": {"value": "net_outturn_weight"}
+      }
+    }
+  },
+  "expect": {
+    "DOC-01": "pass", "QTY-01": "pass", "QTY-02": "pass",
+    "PRC-01": "pass", "PRC-02": "pass", "PRC-03": "pass",
+    "QUA-01": "pass", "QUA-02": "pass", "QUA-03": "pass", "QUA-04": "pass",
+    "FIN-01": "not_applicable", "FIN-02": "not_applicable", "FIN-03": "pass",
+    "SHP-01": "pass", "SHP-02": "not_applicable", "CPT-01": "pass"
+  },
+  "expect_clear_to_pay": true
+}

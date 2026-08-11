@@ -1,0 +1,83 @@
+*** SYNTHETIC DOCUMENT - FABRICATED FOR A DEPLOYMENT WORK SAMPLE. NOT A REAL CONTRACT. ***
+
+                     PARANAGUA AGRO EXPORTADORA S.A.
+                Rua do Porto 1180, Paranagua, Parana, Brazil
+
+                       CONTRACT OF SALE No. PAE-2611
+                       Date: 14 January 2026
+
+SELLER          Paranagua Agro Exportadora S.A., Parana, Brazil
+BUYER           Harbourline Commodities B.V., Wilhelminakade 173, Rotterdam, NL
+BROKER          Vanterpool Grain Brokers Ltd, London
+
+1.  GOODS
+    Brazilian soyabeans in bulk, crop 2025/26, of GMO origin, sound loyal and
+    merchantable quality.
+
+2.  QUANTITY
+    60,000.000 metric tonnes, 5% more or less at Seller's option. Contractual
+    tolerance range therefore 57,000.000 - 63,000.000 metric tonnes.
+
+3.  PRICE
+    The settlement price of the CBOT Soyabean futures contract for May 2026
+    delivery on the date of pricing, converted to metric tonnes at the standard
+    factor of 36.7437 bushels per metric tonne, PLUS a basis of USD 38.00 per
+    metric tonne CIF Rotterdam.
+
+    Pricing date: 14 January 2026.
+    CBOT May 2026 settlement: 1142.25 US cents per bushel.
+    Flat futures equivalent: USD 419.70 per metric tonne.
+    Contract price: USD 457.70 per metric tonne CIF Rotterdam.
+
+4.  DELIVERY TERMS
+    CIF Rotterdam (Incoterms 2020). GAFTA 100 to apply save as varied herein.
+
+5.  SHIPMENT PERIOD
+    One lot, to be shipped between 1 February 2026 and 28 February 2026, both
+    dates inclusive. Bill of Lading date to be taken as proof of date of
+    shipment.
+
+6.  QUALITY SPECIFICATION
+        Moisture                  maximum 14.00 %
+        Foreign matter            maximum  1.00 %
+        Damaged grains            maximum  8.00 %
+        Heat damaged grains       maximum  1.00 %
+        Oil content               minimum 18.50 %, basis 19.00 %, being the
+                                  arithmetic average of three (3) determinations
+                                  made in accordance with GAFTA sampling rules
+        Protein                   minimum 34.00 %
+
+7.  ALLOWANCES AND DISCOUNTS
+    (a) Moisture. Where certified moisture exceeds 14.00% but does not exceed
+        15.00%, a weight allowance shall be granted in favour of the Buyer,
+        calculated pro rata on the excess moisture percentage applied to the
+        net shipped weight. Where certified moisture exceeds 15.00%, the Buyer
+        shall be at liberty to reject the parcel or to lodge a quality claim.
+    (b) Oil content. Where the certified average oil content is below the
+        19.00% basis, a discount of USD 2.50 per metric tonne shall apply for
+        each full 0.50% below basis, pro rata for fractions. Where the certified
+        average oil content is below the 18.50% minimum, the Buyer shall be at
+        liberty to reject the parcel or to lodge a quality claim.
+
+8.  WEIGHTS AND QUALITY
+    Net outturn weight final at port of discharge as determined by draft survey
+    and certified by a GAFTA registered superintendent appointed jointly by the
+    parties. Quality final at port of discharge.
+
+9.  PAYMENT
+    Cash against documents. Net 30 days from Bill of Lading date. Payment to be
+    made to Seller's nominated account against presentation of full set of
+    shipping documents including phytosanitary certificate and certificate of
+    origin.
+
+10. AMENDMENTS
+    No variation of this contract shall be binding unless agreed in writing
+    between Seller and Buyer and confirmed by the Broker.
+
+11. ARBITRATION
+    GAFTA arbitration No. 125, London.
+
+For and on behalf of                      For and on behalf of
+PARANAGUA AGRO EXPORTADORA S.A.           HARBOURLINE COMMODITIES B.V.
+
+    [signed] R. Bastos                        [signed] J.M. van den Berg

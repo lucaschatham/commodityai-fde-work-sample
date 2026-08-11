@@ -1,0 +1,6 @@
+{
+  "case_id": "oil_single_determination_low_average_conforms",
+  "description": "FALSE-REJECTION GUARD. Determination 2 (18.40%) is below the 18.50% minimum on its own, but contract cl.6 makes oil content the average of three determinations, and the average (18.70%) conforms. A naive per-determination read rejects a conforming panamax cargo worth USD 27m. This is the single highest-cost way to get this catalogue wrong.",
+  "overlay": {"set_fields": {"certificate_of_quality": {"oil_content_determinations": {"value": [18.90, 18.40, 18.80], "confidence": 0.95}}}},
+  "expect": {"QUA-02": "pass"}
+}

@@ -1,0 +1,47 @@
+*** SYNTHETIC DOCUMENT - FABRICATED FOR A DEPLOYMENT WORK SAMPLE. NOT A REAL BILL OF LADING. ***
+
+                        ORIGINAL  -  BILL OF LADING
+                        (Bulk cargo, port to port shipment)
+
+B/L No.                 PNG-2026-0219
+Vessel / Voyage         MV SANTOS PIONEER / V.26-04
+Flag / IMO              Panama / IMO 9612774
+Port of Loading         Paranagua, Parana, Brazil
+Port of Discharge       Rotterdam, Netherlands
+Charter Party           Dated 22 January 2026
+
+SHIPPER
+Paranagua Agro Exportadora S.A.
+Rua do Porto 1180, Paranagua, Parana, Brazil
+
+CONSIGNEE
+Harbourline Oilseeds Processing B.V.
+Botlek Terminal, Welplaatweg 88
+Rotterdam, Netherlands
+
+NOTIFY PARTY
+Harbourline Commodities B.V.
+Wilhelminakade 173, Rotterdam, NL
+ops@harbourline.example
+
+--------------------------------------------------------------------------------
+DESCRIPTION OF GOODS                                          QUANTITY
+--------------------------------------------------------------------------------
+BRAZILIAN SOYABEANS IN BULK                       59,412.500 METRIC TONNES
+CROP 2025/26, GMO                                 (FIFTY NINE THOUSAND FOUR
+CONTRACT PAE-2611                                  HUNDRED TWELVE POINT FIVE
+LOADED IN HOLDS 1-7                                METRIC TONNES)
+
+Weight per shore scale and load port draft survey.
+--------------------------------------------------------------------------------
+
+SHIPPED ON BOARD IN APPARENT GOOD ORDER AND CONDITION
+
+Freight            PREPAID
+Number of Original B/Ls   THREE (3)
+
+Place and date of issue   PARANAGUA, 3 MARCH 2026
+
+                                        For the Master
+                                        AGENCIA MARITIMA SUL LTDA
+                                        [signed]

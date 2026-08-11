@@ -1,0 +1,43 @@
+*** SYNTHETIC DOCUMENT - FABRICATED FOR A DEPLOYMENT WORK SAMPLE. NOT A REAL INVOICE. ***
+
+                     PARANAGUA AGRO EXPORTADORA S.A.
+                Rua do Porto 1180, Paranagua, Parana, Brazil
+                        CNPJ 11.447.902/0001-63
+
+                            COMMERCIAL INVOICE
+
+Invoice No.             PAE-INV-26-0412
+Invoice Date            22 March 2026
+Contract No.            PAE-2611
+Bill of Lading          PNG-2026-0219
+Vessel                  MV SANTOS PIONEER / V.26-04
+Terms                   CIF Rotterdam (Incoterms 2020)
+Payment Terms           Cash against documents, net 30 days from B/L date
+Due Date                2 April 2026
+
+BILL TO
+Harbourline Commodities B.V.
+Wilhelminakade 173
+Rotterdam, Netherlands
+
+--------------------------------------------------------------------------------
+DESCRIPTION                        QUANTITY          UNIT PRICE            AMOUNT
+--------------------------------------------------------------------------------
+Brazilian soyabeans in bulk
+crop 2025/26, GMO
+per Contract PAE-2611
+
+Net shipped weight              59,412.500 MT   USD 457.70/MT   USD 27,193,101.25
+
+--------------------------------------------------------------------------------
+                                                TOTAL DUE       USD 27,193,101.25
+--------------------------------------------------------------------------------
+
+Amount in words: United States Dollars Twenty-Seven Million One Hundred Ninety-Three
+Thousand One Hundred One and 25/100.
+
+Payment to:  Paranagua Agro Exportadora S.A.
+             Account held at Banco do Brasil S.A., Curitiba
+             [account details redacted in work sample]
+
+E. & O. E.

@@ -1,0 +1,7 @@
+{
+  "case_id": "moisture_above_allowance_ceiling",
+  "description": "Moisture 15.40% breaches the 15.00% ceiling. This is a rejection right, not an allowance. Getting this boundary wrong either forfeits a rejection right or wrongly rejects a payable cargo.",
+  "overlay": {"set_fields": {"certificate_of_quality": {"moisture_pct": {"value": 15.40}}}},
+  "expect": {"QUA-01": "fail", "FIN-01": "not_applicable"},
+  "expect_clear_to_pay": false
+}

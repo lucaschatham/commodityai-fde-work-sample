@@ -1,0 +1,16 @@
+{
+  "case_id": "quantity_below_tolerance",
+  "description": "55,000 MT shipped against a 57,000-63,000 MT contractual range. Short-loading below tolerance is a contractual breach, not a pro-rata adjustment.",
+  "overlay": {
+    "set_fields": {
+      "bill_of_lading": {"net_weight_mt": {"value": 55000.000}},
+      "commercial_invoice": {
+        "quantity_mt": {"value": 55000.000},
+        "line_amount_usd": {"value": 25173500.00},
+        "total_usd": {"value": 25173500.00}
+      }
+    }
+  },
+  "expect": {"QTY-01": "fail", "QTY-02": "pass", "PRC-02": "pass"},
+  "expect_clear_to_pay": false
+}

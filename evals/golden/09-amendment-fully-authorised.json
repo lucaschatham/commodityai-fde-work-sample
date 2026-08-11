@@ -1,0 +1,14 @@
+{
+  "case_id": "amendment_fully_authorised_still_reviewed",
+  "description": "ACCEPTED LIMITATION, NOT A BUG. The extension is acknowledged by the contract signatory and confirmed by the broker, so cl.10 appears satisfied on the face of the chat. SHP-02 still routes to a human. Whether a named individual holds delegated authority to bind Harbourline is master data the pipeline does not hold, and the downside of being wrong is an unenforceable USD 27m contract. Cost of this choice is quantified in evals/RESULTS.md.",
+  "overlay": {
+    "set_fields": {
+      "broker_chat": {
+        "broker_confirmation_present": {"value": true, "confidence": 0.95},
+        "amendment_acknowledged_by": {"value": "J.M. van den Berg (Harbourline, contract signatory)", "confidence": 0.95}
+      }
+    }
+  },
+  "expect": {"SHP-01": "fail", "SHP-02": "needs_review"},
+  "expect_clear_to_pay": false
+}

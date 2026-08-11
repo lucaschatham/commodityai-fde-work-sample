@@ -1,0 +1,7 @@
+{
+  "case_id": "oil_below_contractual_minimum",
+  "description": "Average oil 18.20% against an 18.50% minimum. Confidence raised to 0.95 so the assertion tests the rule, not the confidence gate.",
+  "overlay": {"set_fields": {"certificate_of_quality": {"oil_content_determinations": {"value": [18.20, 18.10, 18.30], "confidence": 0.95}}}},
+  "expect": {"QUA-02": "fail"},
+  "expect_clear_to_pay": false
+}

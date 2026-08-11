@@ -1,0 +1,11 @@
+{
+  "case_id": "claim_time_bar_not_tracked",
+  "description": "KNOWN GAP, ASSERTED DELIBERATELY. The catalogue finds USD 184,294.60 of recoverable value but attaches no deadline to it. GAFTA 100 time-bars quality and condition claims; a credit note request that sits in a queue past the bar is worth zero. The pipeline models the money and not the clock.",
+  "overlay": {},
+  "known_gap": {
+    "capability": "contractual claim deadlines",
+    "assert_no_rule_prefix": "CLM",
+    "exposure_usd": 184294.60,
+    "note": "Every exception carries a value and a remedy but no expiry. Ops has no signal that an unactioned exception is decaying. Raised as item 1 in docs/06-product-feedback-memo.md."
+  }
+}

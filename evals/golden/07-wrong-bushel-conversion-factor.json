@@ -1,0 +1,7 @@
+{
+  "case_id": "wrong_bushel_conversion_factor",
+  "description": "Contract carries 39.3683 bu/MT, the maize factor (56 lb/bu), against a soyabean cargo (60 lb/bu, 36.7437). Produces a plausible-looking price that is wrong by roughly USD 30/MT. PRC-03 re-derives rather than trusting the stated flat price, so it catches this.",
+  "overlay": {"set_fields": {"contract": {"bushels_per_mt": {"value": 39.3683}}}},
+  "expect": {"PRC-03": "fail", "PRC-01": "pass"},
+  "expect_clear_to_pay": false
+}

@@ -1,0 +1,7 @@
+{
+  "case_id": "low_confidence_bl_weight",
+  "description": "Same conforming weight, but extracted at 0.60 confidence (smudged bulk B/L). Both quantity rules must withhold their verdict rather than assert a pass on a number the pipeline cannot read. Tests the confidence gate itself.",
+  "overlay": {"set_fields": {"bill_of_lading": {"net_weight_mt": {"value": 59412.500, "confidence": 0.60}}}},
+  "expect": {"QTY-01": "needs_review", "QTY-02": "needs_review"},
+  "expect_clear_to_pay": false
+}

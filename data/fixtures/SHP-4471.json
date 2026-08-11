@@ -1,0 +1,105 @@
+{
+  "_comment": "Golden extraction fixture for shipment SHP-4471 (MV Santos Pioneer, PAE-2611). Field values, confidences and source spans as captured from the synthetic corpus in data/synthetic/. Confidences are the calibration targets agreed with the customer during UAT; see docs/03-rules-and-review-policy.md. Regenerate with `python -m src.extract --refresh` when an ANTHROPIC_API_KEY is present.",
+  "shipment_id": "SHP-4471",
+  "contract_ref": "PAE-2611",
+  "documents": {
+    "contract": {
+      "doc_id": "PAE-2611",
+      "doc_type": "contract",
+      "fields": {
+        "buyer":                          {"value": "Harbourline Commodities B.V.", "confidence": 0.99, "extractor": "model", "source_span": "BUYER  Harbourline Commodities B.V., Wilhelminakade 173, Rotterdam, NL"},
+        "buyer_signatory":                {"value": "J.M. van den Berg", "confidence": 0.95, "extractor": "model", "source_span": "[signed] J.M. van den Berg"},
+        "seller":                         {"value": "Paranagua Agro Exportadora S.A.", "confidence": 0.99, "extractor": "model", "source_span": "SELLER  Paranagua Agro Exportadora S.A., Parana, Brazil"},
+        "contract_form":                  {"value": "GAFTA 100", "confidence": 0.97, "extractor": "model", "source_span": "GAFTA 100 to apply save as varied herein"},
+        "quantity_mt":                    {"value": 60000.0, "confidence": 0.99, "extractor": "model", "source_span": "60,000.000 metric tonnes, 5% more or less at Seller's option"},
+        "quantity_tolerance_pct":         {"value": 5.0, "confidence": 0.99, "extractor": "model", "source_span": "5% more or less at Seller's option"},
+        "futures_settle_cents_per_bushel": {"value": 1142.25, "confidence": 0.97, "extractor": "model", "source_span": "CBOT May 2026 settlement: 1142.25 US cents per bushel"},
+        "bushels_per_mt":                 {"value": 36.7437, "confidence": 0.96, "extractor": "model", "source_span": "converted to metric tonnes at the standard factor of 36.7437 bushels per metric tonne"},
+        "basis_usd_per_mt":               {"value": 38.00, "confidence": 0.98, "extractor": "model", "source_span": "PLUS a basis of USD 38.00 per metric tonne CIF Rotterdam"},
+        "unit_price_usd_per_mt":          {"value": 457.70, "confidence": 0.98, "extractor": "model", "source_span": "Contract price: USD 457.70 per metric tonne CIF Rotterdam"},
+        "incoterm":                       {"value": "CIF Rotterdam", "confidence": 0.99, "extractor": "model", "source_span": "CIF Rotterdam (Incoterms 2020)"},
+        "shipment_window_start":          {"value": "2026-02-01", "confidence": 0.99, "extractor": "model", "source_span": "to be shipped between 1 February 2026 and 28 February 2026"},
+        "shipment_window_end":            {"value": "2026-02-28", "confidence": 0.99, "extractor": "model", "source_span": "to be shipped between 1 February 2026 and 28 February 2026"},
+        "moisture_max_pct":               {"value": 14.00, "confidence": 0.99, "extractor": "model", "source_span": "Moisture  maximum 14.00 %"},
+        "moisture_allowance_ceiling_pct": {"value": 15.00, "confidence": 0.97, "extractor": "model", "source_span": "exceeds 14.00% but does not exceed 15.00%, a weight allowance shall be granted in favour of the Buyer"},
+        "foreign_matter_max_pct":         {"value": 1.00, "confidence": 0.99, "extractor": "model", "source_span": "Foreign matter  maximum  1.00 %"},
+        "damaged_grains_max_pct":         {"value": 8.00, "confidence": 0.99, "extractor": "model", "source_span": "Damaged grains  maximum  8.00 %"},
+        "heat_damaged_max_pct":           {"value": 1.00, "confidence": 0.98, "extractor": "model", "source_span": "Heat damaged grains  maximum  1.00 %"},
+        "oil_content_min_pct":            {"value": 18.50, "confidence": 0.98, "extractor": "model", "source_span": "Oil content  minimum 18.50 %, basis 19.00 %"},
+        "oil_content_basis_pct":          {"value": 19.00, "confidence": 0.97, "extractor": "model", "source_span": "Oil content  minimum 18.50 %, basis 19.00 %"},
+        "oil_content_basis_rule":         {"value": "average_of_3_determinations", "confidence": 0.94, "extractor": "model", "source_span": "being the arithmetic average of three (3) determinations made in accordance with GAFTA sampling rules"},
+        "oil_discount_usd_per_half_pct":  {"value": 2.50, "confidence": 0.93, "extractor": "model", "source_span": "a discount of USD 2.50 per metric tonne shall apply for each full 0.50% below basis, pro rata for fractions"},
+        "protein_min_pct":                {"value": 34.00, "confidence": 0.98, "extractor": "model", "source_span": "Protein  minimum 34.00 %"},
+        "weight_basis":                   {"value": "net_outturn_weight", "confidence": 0.96, "extractor": "model", "source_span": "Net outturn weight final at port of discharge as determined by draft survey"},
+        "payment_terms_days":             {"value": 30, "confidence": 0.99, "extractor": "model", "source_span": "Cash against documents. Net 30 days from Bill of Lading date."},
+        "amendment_requires":             {"value": "written_agreement_both_parties_confirmed_by_broker", "confidence": 0.92, "extractor": "model", "source_span": "No variation of this contract shall be binding unless agreed in writing between Seller and Buyer and confirmed by the Broker."}
+      }
+    },
+    "bill_of_lading": {
+      "doc_id": "PNG-2026-0219",
+      "doc_type": "bill_of_lading",
+      "fields": {
+        "bl_number":         {"value": "PNG-2026-0219", "confidence": 0.99, "extractor": "deterministic", "source_span": "B/L No.  PNG-2026-0219"},
+        "bl_date":           {"value": "2026-03-03", "confidence": 0.98, "extractor": "model", "source_span": "Place and date of issue   PARANAGUA, 3 MARCH 2026"},
+        "vessel":            {"value": "MV SANTOS PIONEER / V.26-04", "confidence": 0.99, "extractor": "deterministic", "source_span": "Vessel / Voyage  MV SANTOS PIONEER / V.26-04"},
+        "net_weight_mt":     {"value": 59412.500, "confidence": 0.99, "extractor": "model", "source_span": "BRAZILIAN SOYABEANS IN BULK  59,412.500 METRIC TONNES"},
+        "consignee":         {"value": "Harbourline Oilseeds Processing B.V.", "confidence": 0.93, "extractor": "model", "source_span": "CONSIGNEE Harbourline Oilseeds Processing B.V., Botlek Terminal, Welplaatweg 88"},
+        "shipper":           {"value": "Paranagua Agro Exportadora S.A.", "confidence": 0.98, "extractor": "model", "source_span": "SHIPPER Paranagua Agro Exportadora S.A."},
+        "port_of_loading":   {"value": "Paranagua", "confidence": 0.99, "extractor": "deterministic", "source_span": "Port of Loading  Paranagua, Parana, Brazil"},
+        "port_of_discharge": {"value": "Rotterdam", "confidence": 0.99, "extractor": "deterministic", "source_span": "Port of Discharge  Rotterdam, Netherlands"}
+      }
+    },
+    "certificate_of_quality": {
+      "doc_id": "VMK-26-03318",
+      "doc_type": "certificate_of_quality",
+      "fields": {
+        "moisture_pct":               {"value": 14.35, "confidence": 0.99, "extractor": "model", "source_span": "Moisture  14.35 %"},
+        "foreign_matter_pct":         {"value": 0.85, "confidence": 0.97, "extractor": "model", "source_span": "Foreign matter  0.85 %"},
+        "damaged_grains_pct":         {"value": 7.20, "confidence": 0.97, "extractor": "model", "source_span": "Damaged grains (total)  7.20 %"},
+        "heat_damaged_pct":           {"value": 0.60, "confidence": 0.96, "extractor": "model", "source_span": "of which heat damaged  0.60 %"},
+        "oil_content_determinations": {"value": [18.90, 18.40, 18.80], "confidence": 0.86, "extractor": "model", "source_span": "Determination 1  18.90 % / Determination 2  18.40 % / Determination 3  18.80 %"},
+        "protein_pct":                {"value": 34.80, "confidence": 0.97, "extractor": "model", "source_span": "Protein (dry basis)  34.80 %"},
+        "sampling_date":              {"value": "2026-03-18", "confidence": 0.98, "extractor": "model", "source_span": "Date of sampling  18 March 2026"},
+        "sampling_place":             {"value": "Rotterdam, Botlek Terminal (discharge)", "confidence": 0.98, "extractor": "model", "source_span": "Place of sampling  Rotterdam, Botlek Terminal (discharge)"}
+      }
+    },
+    "phytosanitary_certificate": {
+      "doc_id": "BR-PR-2026-118427",
+      "doc_type": "phytosanitary_certificate",
+      "fields": {
+        "certificate_number": {"value": "BR-PR-2026-118427", "confidence": 0.99, "extractor": "deterministic", "source_span": "Certificate No. BR-PR-2026-118427"},
+        "consignee":          {"value": "Harbourline Oilseeds Processing B.V.", "confidence": 0.94, "extractor": "model", "source_span": "Harbourline Oilseeds Processing B.V., Botlek Terminal"},
+        "vessel":             {"value": "MV SANTOS PIONEER / V.26-04", "confidence": 0.98, "extractor": "model", "source_span": "MV SANTOS PIONEER / V.26-04"},
+        "bl_reference":       {"value": "PNG-2026-0219", "confidence": 0.97, "extractor": "model", "source_span": "B/L PNG-2026-0219"},
+        "quantity_mt":        {"value": 59412.500, "confidence": 0.97, "extractor": "model", "source_span": "Glycine max (soyabeans), 59,412.500 MT"},
+        "issue_date":         {"value": "2026-03-03", "confidence": 0.98, "extractor": "model", "source_span": "Date  3 March 2026"}
+      }
+    },
+    "commercial_invoice": {
+      "doc_id": "PAE-INV-26-0412",
+      "doc_type": "commercial_invoice",
+      "fields": {
+        "invoice_number":        {"value": "PAE-INV-26-0412", "confidence": 0.99, "extractor": "deterministic", "source_span": "Invoice No.  PAE-INV-26-0412"},
+        "invoice_date":          {"value": "2026-03-22", "confidence": 0.99, "extractor": "model", "source_span": "Invoice Date  22 March 2026"},
+        "billed_to":             {"value": "Harbourline Commodities B.V.", "confidence": 0.99, "extractor": "model", "source_span": "BILL TO Harbourline Commodities B.V., Wilhelminakade 173"},
+        "quantity_mt":           {"value": 59412.500, "confidence": 0.99, "extractor": "model", "source_span": "Net shipped weight  59,412.500 MT"},
+        "unit_price_usd_per_mt": {"value": 457.70, "confidence": 0.99, "extractor": "model", "source_span": "USD 457.70/MT"},
+        "line_amount_usd":       {"value": 27193101.25, "confidence": 0.99, "extractor": "model", "source_span": "USD 27,193,101.25"},
+        "total_usd":             {"value": 27193101.25, "confidence": 0.99, "extractor": "model", "source_span": "TOTAL DUE  USD 27,193,101.25"},
+        "weight_basis_stated":   {"value": "net_shipped_weight", "confidence": 0.91, "extractor": "model", "source_span": "Net shipped weight  59,412.500 MT"},
+        "allowance_line_count":  {"value": 0, "confidence": 0.95, "extractor": "deterministic", "source_span": "(no allowance or deduction line present on invoice)"}
+      }
+    },
+    "broker_chat": {
+      "doc_id": "WA-PAE-2611",
+      "doc_type": "broker_chat",
+      "fields": {
+        "proposed_shipment_window_end": {"value": "2026-03-05", "confidence": 0.88, "extractor": "model", "source_span": "We would ask for extension to 5 March please."},
+        "amendment_requested_by":       {"value": "Ricardo Bastos (Paranagua Agro Exportadora S.A.)", "confidence": 0.90, "extractor": "model", "source_span": "[24/02/2026, 09:31] Ricardo Bastos: ... We would ask for extension to 5 March please."},
+        "amendment_acknowledged_by":    {"value": "Priya Raman (Harbourline Ops)", "confidence": 0.89, "extractor": "model", "source_span": "[24/02/2026, 10:02] Priya Raman: ok fine, noted."},
+        "broker_confirmation_present":  {"value": false, "confidence": 0.72, "extractor": "model", "source_span": "[24/02/2026, 10:04] Hugo Vanterpool: Noted with thanks, will reflect in our records."},
+        "seller_allowance_commitment":  {"value": "we will reflect both on the invoice", "confidence": 0.87, "extractor": "model", "source_span": "[19/03/2026, 11:44] Ricardo Bastos: Understood, we will reflect both on the invoice."}
+      }
+    }
+  }
+}
