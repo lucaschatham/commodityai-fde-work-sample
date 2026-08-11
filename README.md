@@ -20,7 +20,86 @@ Python 3.10+. No dependencies, no credentials, no network.
 
 ---
 
-## The method this is a worked example of
+## Where deployment sits in the wider arc
+
+Deployment is the middle third. Most of what decides whether it succeeds happens before it starts,
+and most of what decides whether it *mattered* happens after it ends.
+
+```mermaid
+flowchart TB
+    Q["Qualify<br/>is this workflow a fit?<br/>does it have a financial readout?"]
+    SC["Technical scoping<br/>the promise-setting moment"]
+    CLOSE["Commercial close<br/>success criteria written into the agreement — or not"]
+    SEC["Security and procurement<br/>SOC 2 evidence, InfoSec questionnaire, DPA,<br/>data residency, MSA, vendor onboarding"]
+    HANDOFF["Sales to deployment handoff<br/>what was promised vs what is scoped"]
+    RECON{"promise matches what<br/>discovery actually finds?"}
+
+    DISC["Discover<br/>map the as-is workflow<br/>capture the baseline"]
+    DEPLOY["Deployment lane — detailed below<br/>Model → Configure → Prove →<br/>Accept → Cut over → Operate<br/>four gates"]
+
+    HYPER["Hypercare<br/>deployment lead still on it"]
+    OWN["Ownership handoff<br/>who owns this customer now?"]
+    VALUE["Value review<br/>argued against the discovery baseline"]
+    EXP["Expansion<br/>next workflow, business unit, region"]
+    REN["Renewal"]
+    PLAT["Platform absorbs the configuration"]
+
+    Q --> SC --> CLOSE
+    CLOSE --> HANDOFF
+    CLOSE -.->|"runs in parallel, own timeline"| SEC
+    HANDOFF --> RECON
+    RECON -->|"no — renegotiate before building"| CLOSE
+    RECON -->|yes| DISC
+    DISC --> DEPLOY
+    SEC -->|"must clear before go-live"| DEPLOY
+    DEPLOY --> HYPER --> OWN --> VALUE
+    VALUE --> EXP
+    VALUE --> REN
+    DISC -.->|"the baseline is the only thing renewal can be argued from"| VALUE
+    EXP -.->|"new workflow re-enters at Discover"| DISC
+    DEPLOY --> PLAT
+    PLAT -.->|"next customer re-enters at Configure"| DEPLOY
+```
+
+Three things this view makes visible that a phase list doesn't:
+
+**The baseline is a commercial instrument, not a discovery artifact.** The long dotted line from
+Discover to Value review is the most consequential edge here. If nobody measured touch time, error
+rate and leaked value *before* the system went in, then at renewal there is no argument — only
+anecdote and whoever is most senior in the room. That measurement costs an afternoon during
+discovery and is unrecoverable afterwards.
+
+**Security and procurement is a parallel track with its own clock.** At Cargill scale it can run
+months and it blocks go-live independently of whether the deployment work is done. Treating it as a
+downstream step is how a deployment that was technically ready in six weeks goes live in five months.
+
+**The two return loops re-enter at different points.** Platform absorption shortens the *next
+customer* by re-entering at Configure. Expansion inside an existing customer re-enters at Discover,
+because it's a new workflow with its own as-is map and its own baseline. Conflating them is how an
+expansion gets scoped as a configuration change and then runs over.
+
+### What I don't know yet
+
+Written down because each one changes how the role should actually be run:
+
+1. **Is there a pilot or POC stage before a full deployment?** A paid pilot with its own success
+   criteria is a different animal from going straight to production, and it changes what gets
+   promised at scoping.
+2. **Does deployment sit in pre-sales technical scoping?** If not, the reconciliation gate after
+   handoff is doing much more work and will be adversarial rather than administrative.
+3. **Who owns the customer after hypercare?** At ten people this is often nobody — which means it's
+   still the deployment lead, which means deployment capacity silently becomes support capacity.
+4. **Who drives security and procurement?** Single most common cause of a go-live date slipping for
+   reasons that have nothing to do with the deployment.
+5. **Does deployment carry an expansion number?** It changes whether you optimise for the workflow
+   in front of you or for the second one.
+6. **What is measured at renewal, and who agreed to it?** If that's decided after go-live, the
+   baseline was probably never captured.
+
+A working assumption about who owns each stage is in
+[00 — Deployment method](docs/00-deployment-method.md), stated so it can be corrected.
+
+## The deployment lane
 
 Seven phases, four gates, one return arc.
 
