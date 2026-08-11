@@ -69,7 +69,10 @@ they're written down in advance. A cutover completed over an unresolved objectio
 nobody uses — the ops lead's disagreement is data about the configuration, not resistance to be
 managed. And the parallel run exits on a *signal*, not a *date*.
 
-Phase detail, artifacts and gate conditions: [00 — Deployment method](docs/00-deployment-method.md).
+Deployment is only the middle third. [00 — Deployment method](docs/00-deployment-method.md) opens
+with the wider arc — qualify, technical scoping, security and procurement, handoff, then hypercare,
+value review, expansion, renewal — plus per-phase artifacts, gate conditions, a working assumption
+about who owns what, and the six things about that arc I'd still need to learn.
 
 ## The trade
 
